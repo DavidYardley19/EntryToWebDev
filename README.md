@@ -1,6 +1,6 @@
 David Yardley\
 33683011\
-d.yardley3767@student.leedsbeckett.ac.uk\
+d.yardley3767@student.leedsbeckett.ac.uk
 
 PLAN:\
 FreeCodeCamp\
