@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links in new tabs</title>
+</head>
+<body>
+    <main>
+        <h1>
+            To open links in new tabs!
+        </h1>
+        <strong>
+            You need to ensure that the anchor tag includes an attribute under "target"
+        </strong>
+    </main>
+
+    <div>
+        <h3>See below!</h3>
+        <p>
+            <a href="https://freecatphotoapp.com" target="_blank">Click me</a>, a new tab will be opened using the target="_blank" attribute
+        </p>
+        <br>
+
+        <!--
+            The three attribute options below seem to be doing the same thing?
+            I probably need to investigate this.
+        -->
+
+        <p>
+            <a href="https://freecatphotoapp.com" target="_parent">Click me</a>, a new tab will be opened using the target="_parent" attribute
+
+            <!-- Typically in the context of framesets / nested frames >>> To be learnt -->
+
+        </p>
+        <br>
+        <p>
+            <a href="https://freecatphotoapp.com" target="_self">Click me</a>, a new tab will be opened using the target="_self" attribute
+
+              <!-- The default behavior, you do not really need to add this. Opens the link in the same tab -->
+
+        </p>
+        <br>
+        <p>
+            <a href="https://freecatphotoapp.com" target="_top">Click me</a>, a new tab will be opened using the target="_top" attribute
+
+            <!-- Top level browsing context, great for breaking out of framesets / nested frames. -->
+
+        </p>
+    </div>
+</body>
+</html>
