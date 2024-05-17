@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <main>
+        <h1>Just fill out here, sir.</h1>
+        <section>
+            <h2>The "form" element</h2>
+            <p>
+                The form element is designed to get information from a user.<br>
+                <b><u>This includes</u></b><br>
+                <!--The u tag is used for underlining text-->
+                <ul>
+                    <li>Names</li>
+                    <li>Emails</li>
+                    <li>Other details</li>
+                </ul>
+            </p>
+        </section>
+        <section>
+            <h2>Cat Form</h2>
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm">
+                <!--
+                    action attribute indicates where the form is sent.
+                -->
+                <input type="text" name="name" required>
+                <br>
+                <!--
+                    A name attribute is required to specify an identity when accessing data from the form.
+                -->
+
+                <!--required, think of NOT NULL when working in SQL, you cannot submit a form without a required field filled in-->
+
+                <input type="text" name="Cat name" placeholder="Ex. Felix">
+                <!--placeholder attribute allows you to enter a greyed out string within the input box which gives a hint on what to enter.
+                This is overwritten once the user types a character in-->
+
+                <button type="submit">Submit</button>
+                <!--If no button attributes have been given, then the default behavior is to sumbit the form to the specified location in the forms action attribute-->
+            </form>
+        </section>
+    </main>
+</body>
+</html>
