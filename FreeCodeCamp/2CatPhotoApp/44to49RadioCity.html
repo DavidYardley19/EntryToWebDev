@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Input</title>
+</head>
+<body>
+    <main>
+        <h1>Input type=radio</h1>
+        <section>
+            <h2>Please specify what your favourite animal is</h2>
+
+            <p>See the end of the form, if it is not present</p>
+        </section>
+        <section>
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm"><b>Favourite Animal</b>
+                <br>
+                <input type="radio" name="animal" id="cat"> Cat
+                <input type="radio" name="animal" id="dog"> dog
+                <input type="radio" name="animal" id="hampster"> hampster
+                <input type="radio" name="animal" id="tiger"> tiger
+                <input type="radio" name="animal" id="penguin"> penguin
+                <input type="radio" name="animal" id="other"> other
+            </form>
+
+            <!--
+                Note: 
+                Remember that input are self closing
+                action attribute within form tags are where the form is to be submitted to
+
+                I believe ID is to be unique to each input however the name can be the same in order to only have one option available?
+            -->
+
+        </section>
+        <section>
+            <h3>Working with labels</h3>
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm">Preferred drinks
+                <label><input type="radio" name="preferedDrink" id="milk">Milk</label>
+
+                <!--
+                    Labels allow you to associate the text with radio buttons so that these can be clicked aswell!
+                    Notice that when this is ran, you can also click the name "Milk" to switch the radio button.
+                -->
+    
+                <label><input type="radio" name="preferedDrink" id="cola">Cola</label>
+    
+                <!--
+                    The id attribute within an input element is to uniquely identify HTML elements.
+                    Probably good practice to treat these as variable names,
+                        Try not to start them with a capital or number > Unless they are CONSTANTS perhaps
+                        Utilise camelCase or under_lines when naming.
+                -->
+    
+                <label><input type="radio" name="preferedDrink" id="water">Water</label>
+    
+                <!--
+                    To avoid having two radio buttons being selected at the same time, you will need a name that matches for all of them.
+                    Here, we have name="preferedDrink"
+                    When one option is already selected and you wish to choose another option, then the previous one will be deselected.
+                -->
+            </form>
+        </section>
+
+        <section>
+            <h3>Working with value attributes</h3>
+            <p>
+                When utilising input tags, the data being submitted from the form are based on the name and value attributes
+            </p>
+            <!--
+                Above you will notice that no value attribute has been assigned, this means that it will be automatically set to the name-name = on... e.g. preferedDrink=on
+                    This is not ideal when you have more than two values.
+
+                NOTE:
+                    REMEMBER: ATTRIBUTES name AND value ARE RETURNED!
+                
+                For the sake of argument, just use value = id for now... You could just set them to integer values like 1,2,3 and so on and so forth.
+            -->
+
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm">Hair Colours
+                <br>
+                <input type="radion" name="HairColour" id="blonde" value="blonde">Blonde
+                <input type="radion" name="HairColour" id="red" value="blonde">Red
+                <input type="radion" name="HairColour" id="grey" value="blonde">Grey
+                <input type="radion" name="HairColour" id="black" value="blonde">Black
+                <input type="radion" name="HairColour" id="brunette" value="blonde">Brunette
+                <input type="radion" name="HairColour" id="other" value="blonde">Other
+
+                <!--Here values have just been set to the same as the id's but you could just have 0-5 respectively for each option-->
+            </form>
+        </section>
+
+    </main>
+</body>
+</html>
