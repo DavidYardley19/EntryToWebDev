@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CheckBox</title>
+</head>
+<body>
+    <h1>CheckBox</h1>
+
+    <!--
+        Random tag:
+            details (+summary)
+        details tag allows you to create a collapsable content widget within the page. This allows the user to shrink the options present.
+
+        I like this one... A lot
+
+        It is often paired with a summary tag to provide a caption for the collapsable content, this does not get hidden when interacted with.
+        The summary text also acts like a label in that clicking it, will also switch the collapsable content.
+    -->
+
+    <details>
+        <summary>What is the difference between a checkbox and a radiobox?</summary>
+        <p>The radio box typically only allows for one input from a set of options
+            <br>
+            Meanwhile, checkboxes typically allow the user to enter more than one input from the options provided
+        </p>
+    </details>
+
+    <main>
+        <section>
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm">
+                <fieldset>
+                    <legend>Tasks To Complete</legend>
+
+                    <!--Make sure you have a space between the input element and the text... Is this really necessary?
+                        Well, it does make the whole thing a lot more readable. Imagine that you are already working in a big team.
+                        The br tags also assist with this.
+                        I like to have them on a seperate line to really space the thing out. Make's it obvious rather than read the end of each line.
+                    -->
+
+                    <input type="checkbox" name="tasks[]" id="washing" value="washing"> Washing
+                    <br>
+                    <input type="checkbox" name="tasks[]" id="cleaning" value="cleaning"> Cleaning
+                    <br>
+                    <input type="checkbox" name="tasks[]" id="dusting" value="dusting"> Dusting
+                    <br>
+                    <input type="checkbox" name="tasks[]" id="mowing" value="mowing"> Mowing
+                    <br>
+                    <input type="checkbox" name="tasks[]" id="shopping" value="shopping"> Shopping
+                    <br>
+                    <input type="submit" value="submit">
+
+                    <!--
+                        The reasoning for having the name as the same is so that they can be submitted as a group
+                        The reasoning for having the square brackets[] at the end of the name: tasks, is to signify that this will be sent to an array. 
+                        The values will need to be different when working with the same name.
+                    -->
+
+                    <!--
+                        However, if in another case, you want each checkbox to represent a different field or piece of data, ensure that the name is set uniquely
+                        The values can be the same here in some instances.
+                    -->
+
+                </fieldset>
+            </form>
+        </section>
+        <section>
+            <blockquote>
+                "Start with the do, the feeling will come later."
+                <br>
+                - Dave
+            </blockquote>
+        </section>
+    </main>
+</body>
+</html>
