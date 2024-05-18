@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on Labels</title>
+</head>
+<body>
+    <main>
+        <h1>For Attribute</h1>
+        
+        <section>
+            <details>
+                <summary>What is the purpose of the <b>for</b> attribute?</summary>
+                <p>
+                    Another way to associate an input element with labels is to utilise the "for" attribute.
+                    <br>
+                    This means that the input element does not necessarily need to be within the label element.
+                    <br>
+                    <em>This is false information, find out the real info below:</em>
+                    <br>
+                    You can plant the text within a label element, ensuring that the for attribute is associated with the identifier attribute in the input option.
+                </p>
+            </details>
+        </section>
+
+        <section>
+            <form action="C:\Users\david\EntryToWebDev\FreeCodeCamp\2CatPhotoApp\SubmitForm">Seperate labels and checkboxes Test
+                <br>
+                <fieldset>
+                    <legend>Favourite Food</legend>
+                    
+                    <input type="checkbox" name="faveFood" id="lasagna" value="lasagna">
+                    <label for="lasagna">Lasagna</label>
+                    <br>
+                    <input type="checkbox" name="faveFood" id="pizza" value="pizza"> 
+                    <label for="pizza">Pizza</label>
+                    <br>
+                    <input type="checkbox" name="faveFood" id="burger" value="burger"> 
+                    <label for="burger">Burger</label>
+                    <br>
+                    <input type="checkbox" name="faveFood" id="salad" value="salad"> 
+                    <label for="salad">Salad</label>
+                    <br>
+                    <input type="checkbox" name="faveFood" id="donuts" value="donuts"> 
+                    <label for="donuts">Donuts</label>
+                    <br>
+
+                    <!--
+                        It is probably best to format it so that the id lines up (almost) perfectly with the for attribute.
+                        see below.
+                    -->
+
+                    <input id ="other" type="checkbox" name="faveFood" value="other"> 
+                    <label for="other">Other</label>
+
+                </fieldset>
+            </form>
+        </section>
+    </main>
+    <aside>
+        <h3>Cookies</h3>
+        <input checked type="radio" name="acceptingCookies" id="cookiesSelection">
+        <label for="cookiesSelection">I agree to share my data</label>
+        <br>
+           <!--
+            Add the attribute: checked, for when you want there to be an automatic selection for something.
+            Great for those pesky cookie hoarders.
+            -->
+        <p>
+            Jokes on you, since this is a solo radio box, you cannot opt out.
+        </p>
+    </aside>
+</body>
+</html>
