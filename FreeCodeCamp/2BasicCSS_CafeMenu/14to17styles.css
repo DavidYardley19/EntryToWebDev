@@ -1,0 +1,5 @@
+/* Code copied from the style tag in html */
+h1, h2, p {
+    text-align: center;
+  }
+/* With this file, you can completely seperate the html code from the css code aside from a line to connect the two */

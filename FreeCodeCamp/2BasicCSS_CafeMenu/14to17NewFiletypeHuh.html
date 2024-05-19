@@ -3,11 +3,26 @@
   <head>
     <meta charset="utf-8" />
     <title>Cafe Menu</title>
-    <style>
-      h1, h2, p {
-        text-align: center;
-      }
-    </style>
+    <!-- styles tag removed since we now have a css file to go alongside this html document -->
+    <link rel="stylesheet" href="14to17styles.css" />
+    <!-- The above can be used instead, link a html doc to its stylesheet. Remember that this is self closing.
+        rel stands for relation to the html document. Critical for defining how the linked resource is to be understood - almost like a protocol
+
+        other values for rel may include
+            icon
+            alternate
+            author
+            canonical
+            preload
+            manifest
+            dns-prefetch
+            preconnect
+            prefetch
+    -->
+
+    <!-- In order for everything to look similar on different device types, the below is required - content attribute is vital -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
   </head>
   <body>
     <main>
