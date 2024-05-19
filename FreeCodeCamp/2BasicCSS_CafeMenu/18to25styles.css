@@ -1,0 +1,20 @@
+h1, h2, p {
+    text-align: center;
+  }
+
+body {
+    /*background-color: burlywood;*/
+}  
+
+#menu{
+    width: 80%;
+    background-color: burlywood;
+
+    /* The two lines below allow you to centre the div within the parent element: here it is body */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* 
+This is what a CSS comment looks like
+ */
