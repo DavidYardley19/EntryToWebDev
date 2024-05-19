@@ -1,14 +1,21 @@
 body {
-    /*
-    background-color: burlywood;
+    /* url() used to asign a background image, would like to know of other methods. 
+    Others may include:
+        linear-gradient
+        radial gradiant
+        conic gradiant
+        none
+            Most interested in this one, what does it mean... completely blank?
+        multiple backgrounds
     */
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
   }
   
 h1, h2, p {
     text-align: center;
   }
   
-#menu {
+.menu {
     width: 80%;
     background-color: burlywood;
     margin-left: auto;
