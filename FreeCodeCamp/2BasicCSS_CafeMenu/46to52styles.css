@@ -1,0 +1,29 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+  }
+  
+  h1, h2, p {
+    text-align: center;
+  }
+  
+  .menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .item p {
+    display: inline-block;
+  }
+  
+  /* Since the flavor class below already contains the code we want for deserts, we can just add deserts in- list selectors again! */
+  .flavor, .dessert {
+    text-align: left;
+    width: 75%;
+  }
+  
+  .price {
+    text-align: right;
+    width: 25%
+  }
