@@ -1,0 +1,33 @@
+body {
+    background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    }
+  
+h1, h2, p {
+    text-align: center;
+    }
+
+.menu {
+    width: 80%;
+    background-color: burlywood;
+    margin-left: auto;
+    margin-right: auto;
+    }
+
+.item p {
+    /* Using a class selector, but also specifying that this applies to the p elements within the scope of the tag used in html */
+    display: inline-block;
+    /* The inline block elements only take up the width of their content, to spread them out I will need to add a width propert to .flavor and .price */
+    }
+
+    /* Changing the widths to 75:25 since the flavours will take up more characters naturally */
+.flavor {
+    text-align: left;
+    width: 75%;
+    }
+    
+    .price {
+    text-align: right;
+    width: 25%;
+    }
+
+/* 50pc width will not work since when working with inline blocks, a little space is given to the right of the first p element */
