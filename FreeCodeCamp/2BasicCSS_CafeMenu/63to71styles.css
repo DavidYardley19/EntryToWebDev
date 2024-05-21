@@ -27,6 +27,18 @@ body {
     padding: 20px;
     max-width: 500px;
   }
+
+  hr {
+    /* It will be a very thin grey line by default, you can amend this: */
+    height: 2px;
+    /* Brown to match the coffee colour, or should I say color.. But it will still have some grey edges */
+    background-color: brown;
+    border-color: brown;
+
+    /* The thickness of the line looks bigger, default for border-width is 1px > The total height will be height + 2(border-width) 
+        We can just change the height to be 2px to combat this
+    */
+  }
   
   h1, h2 {
     font-family: Impact, serif;
