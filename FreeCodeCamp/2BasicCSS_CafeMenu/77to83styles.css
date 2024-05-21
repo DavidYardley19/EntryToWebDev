@@ -60,5 +60,35 @@ body {
     width: 25%
   }
   
-  
-  
+/* To keep the file organised, generally put the css styles in order that the html file comes in - so footer at the bottom. */
+
+/* FOOTER */
+footer {
+    font-size: 14px;
+}
+
+ /* Default color of an unclicked link = blue
+    If clicked, then purple
+
+    To make the footer links the same color regardless of clicked state - use a type selector for the anchor element with black as the color property
+    */
+
+a {
+    color: black;
+}
+
+/* You can change the properties of a link which has been interacted with using a pseudo-selector 
+    Here we use :visited, however a useful one down the line may be :hover to make the page look more, dynamic
+*/
+a:visited {
+    color: black;
+}
+
+a:hover {
+    color: brown;
+}
+
+/* Whilst being clicked, use active */
+a:active {
+    color: brown;
+}
