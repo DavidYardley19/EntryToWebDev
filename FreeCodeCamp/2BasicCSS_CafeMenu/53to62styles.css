@@ -1,5 +1,30 @@
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+    /* Change the family of the font: */
+    font-family: sans-serif;
+  }
+
+  h1, h2 {
+    /* Switch it up a little with different fonts
+    Utilising a single selector (list) to make the code more efficient */
+    font-family: Impact, serif;
+    /* Fallback fonts are used like img alts - They are assigned when the first specified font cannot be used or is not accepted by the browser.
+    It may be a good idea to include packages in order to prevent this from happening in the future
+    serif = fallback font here. */
+  } 
+
+  /* The typography of the heading elements are set by default values of the users browser, here we are using chrome
+  We can change this manually */
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+
+  .established {
+    /* Works the same as <em> in html */
+    font-style: italic;
   }
   
   h1, h2, p {
@@ -8,9 +33,19 @@ body {
   
   .menu {
     width: 80%;
+    /* Current width ALWAYS takes up 80pc of the body elements width.
+        On a wide screen, it appears far from the prices.
+        Adding max-width property with the value of 500px to combat this.
+    */
+    max-width: 500px;
     background-color: burlywood;
     margin-left: auto;
     margin-right: auto;
+    /* Giving the menu some space between the content and the sides
+        Rather than write 20px for each side individually, I can just use the general: padding property instead
+            This does it for all 4 sides
+    */
+    padding: 20px;
   }
   
   .item p {
