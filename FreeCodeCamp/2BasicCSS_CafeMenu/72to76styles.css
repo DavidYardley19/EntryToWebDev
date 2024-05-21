@@ -1,6 +1,10 @@
 body {
     background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
     font-family: sans-serif;
+
+    /* Creating more room around the menu, utilising padding once more */
+    padding: 20px;
+
   }
   
   h1 {
@@ -40,7 +44,20 @@ body {
   
   .item p {
     display: inline-block;
+
+    /* There is still a large gap between each line, will amend this with top and bottom margins */
+    margin-top: 5px;
+    margin-bottom: 5px;
+
+    /* Making the size of the text larger with fontsize property */
+    font-size: 18px;
   }
+
+  .bottom-line {
+    /* Since the bottom item is really close to the hr element in comparison to the top item and the COFFEE heading, another class will be used for the hr element. */
+    margin-top: 25px;
+  }
+
   
   .flavor, .dessert {
     text-align: left;
