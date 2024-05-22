@@ -5,7 +5,42 @@ h1 {
   .marker {
     width: 200px;
     height: 25px;
-    background-color: red;
+    /* 
+    background-color: red; 
+    */
     margin: 10px auto;
   }
   
+  .one {
+    /* Moved to this one since we want different coloured markers, leaving the colour in there will not make it modular */
+    /* background-color: red; */
+    background-color: rgb(255, 0, 0);
+  }
+
+  .two {
+    /*     background-color: green;
+    */    
+    background-color: rgb(0, 127, 0);
+    /* Amended to 127 for green since it is quite intense right now */
+  }
+
+  .three {
+    /*     background-color: blue;
+    */    
+    background-color: rgb(0, 0, 255);
+
+  }
+
+  .container {
+    background-color: rgb(0, 0, 0);
+    /* rbg is additive, thus it will start with black then you can add an amount of red, green and blue respectively */
+
+
+    /* rgb is an example of a function, where it takes values in and performs a specific code sequence
+        Values range from 0 to 255 > Think of the largest 8 bit binary number: 255
+            Calculated: 2^(8 bits +1) - 1
+    */
+
+
+    /* cmky - cyan magenta yellow black - meanwhile is subtractive - probably means it starts with white. */
+  }

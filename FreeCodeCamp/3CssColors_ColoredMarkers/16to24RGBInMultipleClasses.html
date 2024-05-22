@@ -1,3 +1,11 @@
+<!-- Top tip
+
+    Same way for adding classes with tags, you can add multiple classes, seperated by full stops
+    Example:
+        tag.ClassOne.ClassTwo
+
+-->
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -9,11 +17,21 @@
   <body>
     <h1>CSS Color Markers</h1>
     <div class="container">
-      <div class="marker">
+
+        <!-- 
+
+            When adding multiple classes, it doesnt matter what order they go in the html file
+            However the prescedence is decided in the styles file 
+                > The one that is written lower down in the file overwrites the previous one if the same properties are used.
+                You can also introduce the !important keyword to mark one class as the overwriter' as I'd like to call it.
+
+         -->
+
+      <div class="marker one">
       </div>
-      <div class="marker">
+      <div class="marker two">
       </div>
-      <div class="marker">
+      <div class="marker three">
       </div>
     </div>
   </body>
