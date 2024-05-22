@@ -1,0 +1,44 @@
+h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+/* Your eyes will naturally be drawn to the color red
+  Great for directing you to important headings buttons and links
+*/
+
+  .red {
+    background-color: rgb(255,0,0);
+  }
+  
+  .green {
+    /* Can use hex values for the colour since each hex number represents 4 bits. > 6 hex values for 3 bytes of data, aka 3 colors. */
+    /* When using hex, there is no need to use the rgb function */
+    background-color: #007F00;
+    /* Using 7F instead of FF to reduce the intensity of the color green. */
+  }
+  
+  .blue {
+    background-color: rgb(0,0,255);
+  }
+  
+/* NOTES
+
+  Color wheel is where similar hues are near each other, different ones are futher apart.
+  e.g. pure red is next to orange and rose.
+
+  Two colors that are opposite are called complementary colors.
+  If combined: they produce grey.
+    But when placed next to each other, they are highly contrasted.
+
+*/
