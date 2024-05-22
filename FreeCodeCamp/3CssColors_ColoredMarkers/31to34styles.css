@@ -1,0 +1,36 @@
+h1 {
+    text-align: center;
+  }
+  
+  .container {
+    background-color: rgb(255, 255, 255);
+    padding: 10px 0;
+  }
+  
+  .marker {
+    width: 200px;
+    height: 25px;
+    margin: 10px auto;
+  }
+  
+  .one {
+    /* Orange = r + g/2 */
+    background-color: rgb(255, 127, 0);
+
+    /* g + r/2 = chartreuse green */
+  }
+  
+  .two {
+    /* Spring green = g + b/2 */
+    background-color: rgb(0, 255, 127);
+
+    /* b + g/2 = azure */
+  }
+  
+  .three {
+    /* violet = b + r/2 */
+    background-color: rgb(127, 0, 255);
+
+    /* r + b/2 = rose */
+  }
+  
