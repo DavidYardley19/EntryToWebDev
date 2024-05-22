@@ -1,3 +1,19 @@
 h1 {
     text-align: center;
   }
+
+.marker {
+    background-color: red;
+
+    /* Since the div element has no content inside of it, it doesnt have a height by default
+    Amending this */
+    height: 25px;
+    width: 200px;
+
+    /* When you have two values for the margin, it sets the first value to top&botom and second value to left&right 
+        So 10px is assingned to top and bottom, auto is set to left and right
+    */
+    margin: 10px auto;
+    /* Auto is used instead of giving the div the same left right top bottom margins */
+
+}  
