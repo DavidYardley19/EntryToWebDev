@@ -14,7 +14,25 @@ h1 {
   }
   
   .red {
-    background-color: rgb(255, 0, 0);
+
+    /*  
+        So far we have set flat colors for containers, but we can also implement gradients.
+        When one color transitions to another.
+            linear-grradient function controls direction of the transition - and which colors are used.
+
+                It actually creates an image element and is usually paired with the background property which accepts images
+    */
+
+    /* background-color: rgb(255, 0, 0); */
+
+    /* 
+    General format for linear gradient
+    background: linear-gradient(gradDirection, col1, col2, ... etc.) 
+    */
+
+    
+    background: linear-gradient(90deg, rgb(255,0,0), rgb(0,255,0), rgb(0,0,255))
+    /* The above is the same as spanning the hue from 0 to 240 along the plane 90deg from the origin */
   }
   
   .green {
@@ -22,6 +40,20 @@ h1 {
   }
   
   .blue {
-    background-color: rgb(0, 0, 0);
+    background-color: hsl(240, 100%, 50%)
+
+    /* HSL color model : hue saturation lightness
+    Accepts 3 values.
+        Hue 0-360
+        saturation 0-100%
+        lightness 0-100%
+
+    Hues: Red is at 0 degrees, green is at 120 degrees, blue is at 240 degrees
+    Saturation 0 = grey, 100pc for pure colour
+
+    Lightness: 0 for black, 100pc for white, 50pc for neutral
+    
+         */
+
   }
   
