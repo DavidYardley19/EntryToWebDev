@@ -14,14 +14,35 @@ h1 {
   }
   
   .red {
-    background: linear-gradient(90deg, rgb(255, 0, 0), rgb(0, 255, 0), rgb(0, 0, 255));
+
+    /* Color stops allow you to finetune where the colors are placed along the gradient line. Utilises a length unit like px or %'s 
+        They are listed right after the colors mentioned, see below:
+
+        Red now stops 75% down the gradient line
+    */
+
+
+    /* background: linear-gradient(90deg, rgb(255, 0, 0) 75%, rgb(0, 255, 0), rgb(0, 0, 255)); 
+
+        Amending to 180 deg
+        Making different shades of red*/
+
+    /* background: linear-gradient(180deg, rgb(122, 74, 14) 0%, rgb(245, 62, 113) 50%, rgb(162, 27, 27) 100%); 
+    
+        NOTE: since the three color stops are calculated automatically at 0 50 and 100%, there is no need for this
+        Also the gradient direction is automatically set to top to bottom so no need for 180deg specified
+    */
+    background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
   }
   
   .green {
-    background-color: #007F00;
+    /* Doing the same for green as I did for red > But with hex codes! */
+    background: linear-gradient(#55680D, #71F53E, #116C31);
+
   }
   
   .blue {
-    background-color: hsl(240, 100%, 50%);
+    /* Doing the same for blue, but this time with HSL */
+    background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%),hsl(240 , 56%, 42%));
   }
   
