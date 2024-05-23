@@ -31,13 +31,29 @@ h1 {
   
   .red {
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
+
+    /* Box shadow: can apply one or more shadows around an element.
+        box-shadow: offsetX offsetY color
+            When using the value 0, there is no need to add a unit like em or px
+        
+        Pos x is right, pos y is down
+        Will learn how to spread the shadow with spreadRadius value
+    */
+    /* box-shadow: -5px -5px red; */
+    box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+
   }
   
   .green {
     background: linear-gradient(#55680D, #71F53E, #116C31);
+        /* The edges are sharp... There is an optional blur radius value which you could add after the offset units */
+    box-shadow: 0 0 20px 0 #3b7e20CC;
+    /* AGAIN alpha channel can be added on the end, denoted by two bytes/chars like the rest. */
   }
   
   .blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
+    /* Spread radius value can be used to make the shadow expand out further, this comes after blur radius */
+    box-shadow: 0 0 20px 0 hsla(223, 59%, 31%, 0.8);
   }
   
