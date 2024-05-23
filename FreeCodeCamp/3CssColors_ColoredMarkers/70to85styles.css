@@ -24,4 +24,59 @@ h1 {
   .blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
   }
+
+.cap {
+    width: 60px;
+    height: 25px;
+}
+
+  .sleeve{
+    width: 110px;
+    height:25px;
+    /* 
+    background-color: white;
+    opacity: 0.5; 
+    */
+
+    /* 
+        opacity is how opaque or non-transparent something is. It ranges from 0 to 1.0
+        Really not a fan of how much properties can vary in terms of values.
+        0-100
+        0-100%
+        0-1
+        0-360 ... Well this kind of makes sense when it comes to the color wheel. 
+    */
+
+    /* Another way to set opacity
+    
+        Utilise the alpha channel, works the same as opacity.
+        Use the rgba function instead, this does the same thing for rgb but adds opacity.
+
+    */
+
+    /* Need to target both with a list selector */
   
+
+
+
+
+    background-color: rgba(255, 255, 255, 0.5);
+    /* You can also use an alpha channmel with hsl and hex colors > see later */
+
+    /* Border width is usually set to none */
+    /* Borders have different styles, it can be solid dashed or dotted. Solid is the most common */
+
+    /* border-width: 10px;
+    border-left-style: solid;
+    border-left-color: black; 
+    
+        All of the above can be condensed into one line
+    */
+
+    border-left: 10px double rgba(0, 0, 0, 0.75);
+
+  }
+
+    .cap,.sleeve {
+        display: inline-block;
+    }
