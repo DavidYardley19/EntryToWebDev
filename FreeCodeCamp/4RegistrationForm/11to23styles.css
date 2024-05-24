@@ -5,3 +5,18 @@ body {
     background-color: #1b1b32;
     color: #f5f6f7;
   }
+
+  /* NOTE
+  
+    The REM unit stands for root-em ... This is relative to the font size of the html element
+
+    label elements are inline by default, theyre all displayed side by side on the same line --- making text harder to read!
+
+    Use the display property to amend this to a block display instead, and add a margin in the rem units
+
+  */
+
+label {
+    display: block;
+    margin: 0.5rem 0;
+}
