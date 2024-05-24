@@ -1,0 +1,106 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    background-color: #1b1b32;
+    color: #f5f6f7;
+
+    /* font family and size */
+    font-family: Tahoma;
+    font-size: 16px;
+  
+  }
+
+  h1, p {
+    /* Centring the two tags */
+    margin: 1em auto;
+    text-align: center;
+  }
+  
+  label {
+    display: block;
+    margin: 0.5rem 0;
+  }
+
+  form {
+    margin: 0 auto;
+    max-width: 500px;
+    min-width: 300px;
+    /* vw for viewport width, same as vh */
+    width: 60vw;
+    /* Adding padding to the bottom of the form since the submit is sitting right at the bottom */
+    padding-bottom: 2em;
+  }
+  
+  fieldset {
+    /* Only amends the padding above and below */
+    padding: 2rem 0;
+    /* Simple way of removing the border */
+    border: 0;
+    border-bottom: 3px solid #3b3b4f;
+  }
+
+  /* last of type ::: Used to specify the last element present in the html file... The below is css pseudoclass */
+  fieldset:last-of-type {
+    /* none is the same as using 0 as a value */
+    border-bottom: none;
+  }
+
+  input, textarea, select {
+    width: 100%;
+    /* Recall: 4 vals im margin indicate top right left bottom */
+    margin: 10px 0 0 0;
+
+    /* Changing the text color to white so it is much easier to see, and amending the min height */
+    color: #FFFFFF;
+    min-height: 2em;
+  }
+
+  input, textarea {
+    background-color: #0a0a23;
+    /* Can change the width style and color all in one line */
+    border: 1px solid #0a0a23;
+  }
+
+
+  .inline {
+    /* The below will rm the earlier rule which set all input elements to a width of 100%
+    This is because it is further down the css file. */
+    width: unset;
+    /* Giving some space between the label and the input with the use of a right margin */
+    margin: 0 0.5em 0 0;
+    /* the inline elements are now too high up on the line >> amending the vertical align
+    OPINION... to be honest it doesnt seem too much of an issue but we move */
+    vertical-align: middle;
+  }
+
+  /* utilising an attribute selector... here we can use the name value used before */
+  input[type="submit"] {
+    display: block;
+    /* NOTE: NEED TO REVIEW THE BELOW... forgot- silly me */
+    /* centring the form */
+    margin: 0 auto;
+    width: 60%;
+    /* Making it fit in with the rest of the sizes... also utilising rem */
+    height: 2em;
+    font-size: 1.1rem;
+    background-color: #3b3b4f;
+    border-color: white;
+    /* ensuring width has a min + amending margin for top and bottom to seperate it a little from the form */
+    min-width: 300px;
+    margin: 1em auto;
+}
+
+/* browsers inject their own css properties and values for diff elements...
+    notice how the file input is smaller than other text elements. By default padding is 1px 2px for all input elements we can type in
+*/
+
+input[type="file"] {
+    /* to match the padding for other input elements */
+    padding: 1px 2px;
+}A
+
+/* Amending the tnc text color */
+a {
+    color: #dfdfe2;
+}
