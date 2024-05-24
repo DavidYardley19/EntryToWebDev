@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <title>Registration Form</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="24to31styles.css" />
   </head>
   <body>
     <h1>Registration Form</h1>
@@ -15,10 +15,23 @@
         <label for="email">Enter Your Email: <input id="email" type="email" required /></label>
         <label for="new-password">Create a New Password: <input id="new-password" type="password" pattern="[a-z0-5]{8,}" required /></label>
       </fieldset>
+
+      <!-- Focus on the second fieldset now : account type -->
+
       <fieldset>
 
+        <!-- We cannot have the required attribute assigned to each of the inputs...
+            One way around this is to provide context through the use of a lengend... Then auto check one of the inputs
+        -->
+        <legend>Account type (required)</legend>
+        <!-- We want them to have the same name since we only want one of the two inputs. -->
+        <label for="personal-account"><input checked type="radio" name="account-type" id="personal-account"> Personal </label>
+        <label for="business-account"><input type="radio" name="account-type" id="business-account"> Business </label>
       </fieldset>
       <fieldset></fieldset>
+
+      <!-- T + C apply... checkbox to confirm that the user has read the terms... they cannot submit without checking this -->
+      <label for="terms-and-conditions"><input required type="checkbox" name="" id="terms-and-conditions"> I accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a> </label>
       <input type="submit" value="Submit" />
     </form>
   </body>
