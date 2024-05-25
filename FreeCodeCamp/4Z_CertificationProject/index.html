@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Survey Form</h1>
+    <p id="description">This is a short explanation of the page</p>
+
+    <form action="" id="survey-form">
+        
+        <fieldset>
+            <label for="name" id="name-label">Please enter your name</label>
+            <input required id="name" type="text"> 
+            <label for="email" id="email-label">Please enter your email</label>
+            <input required type="email" name="" id="email"> 
+            <label for="number" id="number-label">Please enter an age</label>
+            <input min="13" max="120" type="number" name="" id="number"> 
+        </fieldset>
+
+        <fieldset>
+            <select name="" id="dropdown">
+                <option value=""></option>
+                <option value=""></option>
+            </select>
+        </fieldset>
+        
+        <fieldset>
+            <input type="radio" name="groupedName" id="">
+            <input type="radio" name="groupedName" id="">
+            <input type="checkbox" name="" id="" value="">
+            <input type="checkbox" name="" id="" value="">
+            <input type="checkbox" name="" id="" value="">
+            <input type="checkbox" name="" id="" value="">
+            <input type="checkbox" name="" id="" value="">
+        </fieldset>
+        
+        <fieldset>
+            <textarea placeholder="Additional Comments" name="" id=""></textarea>
+        </fieldset>
+
+        <button type="submit" id="submit">Submit</button>
+    </form>
+
+</body>
+</html>

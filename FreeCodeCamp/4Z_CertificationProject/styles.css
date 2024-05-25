@@ -1,0 +1,31 @@
+body {
+    text-align: center;
+    background-image: url(https://www.aolej.com/wp-content/uploads/2023/01/stereo_aolej_0097.webp);
+    opacity: 1;
+    font-size: larger;
+    font-family: fantasy;
+    color: orange;
+}
+
+h1,p,form {
+    opacity: 1;
+}
+
+form {
+    margin: 0 auto;
+    max-width: 50%;
+    background-color: aquamarine;
+    padding: 10px 10px;
+    border: 4px dashed orange;
+}
+
+button {
+    width: 6em;
+    height: 2em;
+}
+
+fieldset {
+    margin: 2rem 0;
+    padding: 50px 0;
+    border-color: orange;
+}
