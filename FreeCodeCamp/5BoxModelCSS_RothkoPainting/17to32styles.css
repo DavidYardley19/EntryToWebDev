@@ -2,6 +2,9 @@
     width: 500px;
     height: 600px;
     background-color: #4d0f00;
+    /* padding: 1px; */
+    /* Note: Adding this padding has changed the dimensions to 502x602px... replacing this with overflow - set to hidden */
+    overflow: hidden;
   }
   
   .frame {
@@ -11,4 +14,28 @@
     margin: 20px auto;
   }
   
-  
+.one {
+    width: 425px;
+    height: 150px;
+    background-color: #efb762;
+    /* Margin to give it a vertical space on the outside, horizontally centering within the parent div - canvas */
+    margin: 20px auto;
+    /* But now the .one box is pushing past the canvas and onto the frames border, shifting the canvas down by 20px
+        Adding padding in .canvas to give the .one element something to push off    
+    */
+}  
+
+.two {
+    width: 475px;
+    height: 200px;
+    background-color: #8f0401;
+    /* Centre it! */
+    margin: auto;
+}
+
+.three {
+    width: 91%;
+    height: 28%;
+    background-color: #b20403;
+    margin: auto;
+}
