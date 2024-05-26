@@ -36,8 +36,7 @@
     */
     flex-wrap: wrap;
 
-    /* 
-        justify-content :: determines how the items inside a flex container are positioned on the main axes - affecting position and space around them
+    /* justify-content :: determines how the items inside a flex container are positioned on the main axes - affecting position and space around them
         So it seems pretty much very similar to text align... But maybe it allows you to place it on a z axis too?
             This may not be the case since I earlier stated that flexbox is a 2d construct. >> No there is no option for this. But it can look for space around.
     */
