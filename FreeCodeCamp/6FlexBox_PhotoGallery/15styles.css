@@ -19,10 +19,69 @@
   
   .gallery {
     display: flex;
+
+    /* Flexbox has a main and cross axis. Defined by flex-direction which has 4 possible vals 
+    
+        row: default horizontal axis with flex items left-right
+        row-reverse: horizontal axis items right to left
+        column: vertical axis from top-bottom
+        column-reverse: same but bottom to top
+                NOTE: the axes and directions will differ depending on the text direction.
+    */
+    flex-direction: row;
+
+    /* flex-wrap :: Determines how the items will behave when the container is too small
+        Setting it to wrap will allow the items to wrap into the next row or column..
+            nowrap = default... it prevents the items from wrapping and shrink if needed.
+    */
+    flex-wrap: wrap;
+
+    /* 
+        justify-content :: determines how the items inside a flex container are positioned on the main axes - affecting position and space around them
+        So it seems pretty much very similar to text align... But maybe it allows you to place it on a z axis too?
+            This may not be the case since I earlier stated that flexbox is a 2d construct. >> No there is no option for this. But it can look for space around.
+    */
+    justify-content:center;
+
+    /* align-items :: positions flex content along the cross axis, this case with flexdirection set to row... the cross axis would be vertical
+            To vertically centre the images, give it a centre value
+    */
+    align-items: center;    
+
+
+    /* Adding padding, maxwidth and margin */
+    padding: 20px 10px;
+    max-width: 1400px;
+    margin: 0 auto;  
+
+    /* gap :: shorthand property sets gaps - aka gutters
+        between the rows and columns > row-gap and column-gap can also be used for flex/grid/multicolumn layouts
+    */
+    gap: 16px;
   }
   
   .gallery img {
     width: 100%;
     max-width: 350px;
     height: 300px;
+    /* Some images have been distored since some have different aspect ratios.
+        Rather than set them individually, object-fit can be used :: Determines how imgs should behave
+    */
+    object-fit: cover;
+    /* cover tells image to fill the container whilst maintaining aspect ratio -- this results in cropping to fit the size of the containers. */
+
+    /* Smooth out images with border-radius */
+    border-radius: 10px;
+  }
+
+  /* ::after pseudoelement creates an element that is the last child of the selected element.
+    Can be used to add an empty element after the last image... useful for this application since the last image is placed right in the centre at the bottom
+  */
+
+  .gallery::after {
+    /* Really not sure why we set the content to blank though, does this mean go back to default? 
+        Answer: It inserts an empty string as the content and we gave it the same width as the images meaning it would take up a blank space at the end
+    */
+    content: "";
+    width: 350px;
   }
