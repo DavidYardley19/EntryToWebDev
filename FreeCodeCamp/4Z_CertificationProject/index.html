@@ -13,6 +13,7 @@
     <form action="" id="survey-form">
         
         <fieldset>
+            <legend>Basic Details</legend>
             <label for="name" id="name-label">Please enter your name</label>
             <input required id="name" type="text"> 
             <label for="email" id="email-label">Please enter your email</label>
@@ -22,24 +23,37 @@
         </fieldset>
 
         <fieldset>
+            <legend>How Often Do You Code?</legend>
             <select name="" id="dropdown">
-                <option value=""></option>
-                <option value=""></option>
+                <option value="">Select An Option</option>
+                <option value="">I'm completely new</option>
+                <option value="">Occasionally</option>
+                <option value="">1-2x per week</option>
+                <option value="">3-4x per week</option>
+                <option value="">5-6x per week</option>
+                <option value="">Daily</option>
             </select>
         </fieldset>
         
         <fieldset>
-            <input type="radio" name="groupedName" id="">
-            <input type="radio" name="groupedName" id="">
-            <input type="checkbox" name="" id="" value="">
-            <input type="checkbox" name="" id="" value="">
-            <input type="checkbox" name="" id="" value="">
-            <input type="checkbox" name="" id="" value="">
-            <input type="checkbox" name="" id="" value="">
+            <legend>What Is Your Goal?</legend>
+            <label for=""><input type="checkbox" name="" id="" value="">Improve job prospects</label>
+            <label for=""><input type="checkbox" name="" id="" value="">Feel accomplished</label>
+            <label for=""><input type="checkbox" name="" id="" value="">Expand creativity</label>
+            <label for=""><input type="checkbox" name="" id="" value="">Learn something new</label>
         </fieldset>
         
         <fieldset>
-            <textarea placeholder="Additional Comments" name="" id=""></textarea>
+            <legend>Additional Goals</legend>
+            <textarea placeholder="To be number 1 in the universe..." name="" id=""></textarea>
+        </fieldset>
+
+        <fieldset>
+            <legend>How Did You Hear About Us</legend>
+            <label for=""><input type="radio" name="groupedName" id="">Work</label>
+            <label for=""><input type="radio" name="groupedName" id="">Newspaper</label>
+            <label for=""><input type="radio" name="groupedName" id="">Online</label>
+            <label for=""><input type="radio" name="groupedName" id="">Other</label>
         </fieldset>
 
         <button type="submit" id="submit">Submit</button>
