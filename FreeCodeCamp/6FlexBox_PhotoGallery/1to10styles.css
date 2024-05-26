@@ -1,0 +1,27 @@
+/* Gallery and img seem to have conflicting bordfers due to how the browser calculates the size of the container elements */
+/* Use a global selector to amend this */
+
+* {
+    /* Box sizing used to set behaviour - default is content box.
+        With this model, when an element has a specified width, its calculated based on the content.
+        Padding and border vals are added to the total width so the element grows to accomodate these vals.
+    */
+    box-sizing: border-box;
+    /* Border box fixes this
+        It sizes the opposite way to content box...
+            Total width of an element including padding and borders will be the EXPLICIT width set.
+                Content of the element will shrink to make room for the padding and the border.
+                So the images will automatically resize.
+    */
+}
+
+.gallery {
+    width: 50%;
+    border: solid red 5px;
+}
+
+img {
+    width: 100%;
+    padding: 5px;
+    border: solid blue 5px;
+}
