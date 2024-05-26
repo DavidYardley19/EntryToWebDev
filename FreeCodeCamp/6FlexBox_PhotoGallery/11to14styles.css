@@ -1,0 +1,45 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  /* Can remove the below now since we are using border box sizing instead */
+/*   .gallery {
+    border: 5px solid red;
+    width: 50%;
+  }
+  
+  img {
+    width: 100%;
+    border: 5px solid blue;
+    padding: 5px;
+  } */
+
+  body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f5f6f7;
+  }
+
+  .header {
+    text-align: center;
+    text-transform: uppercase;
+    padding: 32px;
+    /* The white blue and orange look really good here. */
+    background-color: #0a0a23;
+    color: #fff;
+    border-bottom: 4px solid #fdb347;
+  }
+
+  /* flexbox is a 1d css layout to control how items are spaced out and alligned within a container. */
+  .gallery {
+    display: flex;
+    /* This will make tthe element a flex container - any direct children are called flex items */
+  }
+
+  .gallery img {
+    /* the imgs are too big now */
+    max-width: 350px;
+    width: 100%;
+    /* Also make them more uniform: */
+    height: 300px;
+  }
