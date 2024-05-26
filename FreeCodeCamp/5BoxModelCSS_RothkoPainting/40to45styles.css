@@ -13,13 +13,17 @@
     margin: 20px auto;
   }
   
+/* The corners of each box is still too sharp, rounding each one with border radius property */
+
   .one {
     width: 425px;
     height: 150px;
     background-color: #efb762;
     margin: 20px auto;
     box-shadow: 0 0 3px 3px #efb762;
-  
+    border-radius: 9px;
+    /* Transform propery, similar to filter... allows for some more functionality on moving the div. -0.6deg for rotation anti clockwise by 0.6 degrees */
+    transform: rotate(-0.6deg);
   }
   
   .two {
@@ -28,6 +32,9 @@
     background-color: #8f0401;
     margin: 0 auto 20px;
     box-shadow: 0 0 3px 3px #8f0401;
+    /* When two values are provided, it goes topleft+bottomright... then topright+bottomleft */
+    border-radius: 8px 10px;
+    transform: rotate(0.4deg);
   }
   
   .one, .two {
@@ -41,4 +48,7 @@
     margin: auto;
     filter: blur(2px);
     box-shadow: 0 0 5px 5px #b20403;
+    /* Top left start, then clockwise values */
+    border-radius: 30px 25px 60px 12px;
+    transform: rotate(-0.2deg);
   }
