@@ -1,0 +1,14 @@
+.canvas {
+    width: 500px;
+    height: 600px;
+    background-color: #4d0f00;
+}
+
+.frame {
+    border: solid black 50px;
+    width: 500px;
+    /* Padding to adjust the space within the element > creates some white space */
+    padding: 50px;
+    /* Margin to give some room on the outside... 20px for top and bottom, auto to centre it */
+    margin: 20px auto;
+}
