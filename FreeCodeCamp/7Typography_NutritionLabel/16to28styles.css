@@ -17,12 +17,37 @@
     padding: 0 7px;
   }
   
-  h1 {
-    font-weight: 800;
+  /* Amening h1 selector to header h1... It will not work the other way around with how parents and childs work */
+  header h1 {
+    /* font-weight: 800; */
     text-align: center;
     margin: -4px 0;
+    /* adjust space between each char */
+    letter-spacing: 0.15px;
+  }
+
+  .bold {
+    font-weight: 800;
   }
   
   p {
     margin: 0;
+    /* Add horizontal spacing with the use of flex display */
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .divider {
+    border-bottom: 1px solid #888989;
+    margin: 2px 0;
+  }
+
+  .large {
+    height: 10px;
+  }
+
+  .large, .medium {
+    background-color: black;
+    /* There is still a small border at the bottom of the large element, resetting this within here */
+    border: 0;
   }
