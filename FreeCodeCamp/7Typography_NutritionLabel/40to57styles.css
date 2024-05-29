@@ -77,3 +77,18 @@
     font-weight: 700;
   }
 
+/* justifying class rhs */
+  .right {
+    /* justify-content: right; >>> Why is this not the right answer >>> They both seem to be doing the same thing */
+    justify-content: flex-end;
+  }
+
+  .indent {
+    margin-left: 1em;
+  }
+
+  /* :not pseudo-selector used to select all elems that do not match the given rule */
+  /* Modifying the below to exclude the no-divider class */
+  .daily-value p:not(.no-divider) {
+    border-bottom: 1px solid #888989;
+  }
