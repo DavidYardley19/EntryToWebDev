@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Need to learn about other stuff I can put in the content property -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Below for accessability -->
+    <meta name="description" content="Quiz">
+    <title>Quiz With Accessability</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <!-- Here is to introduce the page along a navigation menu -->
+        <img src="https://cdn.freecodecamp.org/platform/universal/fcc_primary.svg" alt="freeCodeCamp" id="logo">
+        <h1>HTML/CSS Quiz</h1>
+        <nav>
+            <ul>
+                <!-- Giving each anchor a href corresponding to the ID of the h2 elements below >> Hash used to indicate id -->
+                <li><a href="#student-info">INFO</a></li>
+                <li><a href="#html-questions">HTML</a></li>
+                <li><a href="#css-questions">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!-- seperate content with sections, we need the user to submit answers too -->
+        <!-- remember the method: post ... since this is a quiz to be submitted -->
+        <form action="https://freecodecamp.org/practice-project/accessibility-quiz" method="post">
+            <!-- role attribute :: used to indicate purpose behind an element on the page to assistive tech >> part of Web Accessibility Technologies (WAI) > Accepts preset vals -->
+            <!-- Every region role needs a label > helps users understand the purpose > A heading element can be used here : arai-labelledby attribute -->
+            <!-- Matching the ID's -->
+            <section role="region" aria-labelledby="student-info">
+                <h2 id="student-info">Student Info</h2>
+                <!-- Link each input to the corresponding label, giving assistive tech users with visual references >> label for attribute = inputs id -->
+                <!-- Giving each input an appropriate type and name + placeholder for first one >> Actually will remove the placeholder - try not to use this since users can mistake it for actual input -->
+                <div class="info">
+                    <label for="student-name">Student Name</label>
+                    <input type="text" name="name" id="student-name">
+                </div>
+                <div class="info">
+                    <label for="email-address">Email Address</label>
+                    <input type="email" name="email" id="email-address">
+                </div>
+                <div class="info">
+                    <label for="date-of-birth">Date Of Birth</label>
+                    <input type="date" name="birthdate" id="date-of-birth">
+                </div>
+            </section>
+            <section role="region" aria-labelledby="html-questions">
+                <h2 id="html-questions">HTML Questions</h2>
+            </section>
+            <section role="region" aria-labelledby="css-questions">
+                <h2 id="css-questions">CSS Questions</h2>
+            </section>
+        </form>
+    </main>
+</body>
+</html>
