@@ -1,0 +1,12 @@
+/* Need to try and centre everything, maybe target body */
+
+#image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    justify-content: center;
+}
+
+#img-div {
+    justify-content: center;
+}
