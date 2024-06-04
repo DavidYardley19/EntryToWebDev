@@ -43,12 +43,35 @@
                     <input type="email" name="email" id="email-address">
                 </div>
                 <div class="info">
-                    <label for="date-of-birth">Date Of Birth</label>
+                    <!-- Add text only a screen reader can read -->
+                    <!-- sr-only is still visible -->
+                    <label for="date-of-birth">D.O.B.<span class="sr-only">(Date of Birth)</span></label>
                     <input type="date" name="birthdate" id="date-of-birth">
                 </div>
             </section>
             <section role="region" aria-labelledby="html-questions">
                 <h2 id="html-questions">HTML Questions</h2>
+                <!-- Each fieldset here will contain a true or false question > Nesting legend elements to give description and one ul element containing two options -->
+                <div class="question-block">
+                    <p>1</p>
+                    <fieldset class="question">
+                        <legend></legend>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </fieldset>
+                </div>
+                <div class="question-block">
+                    <p>2</p>
+                    <fieldset class="question">
+                        <legend></legend>
+                        <ul>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </fieldset>
+                </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
