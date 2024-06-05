@@ -49,6 +49,11 @@ h2 {
   border-bottom: 4px solid #dfdfe2;
 }
 
+p::before {
+  /* This is to prevent unnecessary repetition */
+  content: "Question #";
+}
+
 .sr-only {
   /* Making sure the text is invisible */
   /* There is a specific pattern of css lines for this */
