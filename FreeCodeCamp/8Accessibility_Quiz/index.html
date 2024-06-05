@@ -54,29 +54,51 @@
                 <!-- Each fieldset here will contain a true or false question > Nesting legend elements to give description and one ul element containing two options -->
                 <div class="question-block">
                     <p>1</p>
-                    <fieldset class="question">
-                        <legend></legend>
-                        <ul>
-                            <li></li>
-                            <li></li>
+                    <fieldset class="question" name="question1">
+                        <legend>All Birds Can Fly</legend>
+                        <ul class="answers-list">
+                            <!-- Giving the inputs the same name since more than one can be selected at one time -->
+                            <li><label for="q1-a1"><input type="radio" id="q1-a1" value="True" name="q1">True</label></li>
+                            <li><label for="q1-a2"><input type="radio" id="q1-a2" value="False" name="q1">False</label></li>
                         </ul>
                     </fieldset>
                 </div>
                 <div class="question-block">
                     <p>2</p>
-                    <fieldset class="question">
-                        <legend></legend>
-                        <ul>
-                            <li></li>
-                            <li></li>
+                    <fieldset class="question" name="question2">
+                        <legend>London Is The Capital Of England</legend>
+                        <ul class="answers-list">
+                            <li><label for="q2-a1"><input type="radio" id="q2-a1" value="True" name="q2">True</label></li>
+                            <li><label for="q2-a2"><input type="radio" id="q2-a2" value="False" name="q2">False</label></li>
                         </ul>
                     </fieldset>
                 </div>
             </section>
             <section role="region" aria-labelledby="css-questions">
                 <h2 id="css-questions">CSS Questions</h2>
+                <!-- The final section of the quiz will have a dropdown and a text box -->
+                <div class="formrow">
+                    <div class="question-block">
+                        <label for="q3">Can you target more than one element simultaniously in CSS</label>
+                    </div>
+                    <div class="answer">
+                        <select name="question3" id="q3" required>
+                            <option value="">Select an option</option>
+                            <option value="yes">Yes</option>
+                            <option value="no">No</option>
+                        </select>
+                    </div>
+                    <div class="question-block">
+                        <label for="q4">How do you write a comment in CSS</label>
+                    </div>
+                    <div class="answer">
+                        <textarea name="question4" id="q4" rows="5" cols="24" placeholder="<!-- This is a comment, but in HTML -->"></textarea>
+                    </div>
+                </div>
             </section>
+            <button type="submit">Send</button>
         </form>
     </main>
+    <!-- TODO: STEP 42: FOOTER AND ADDRESS -->
 </body>
 </html>
