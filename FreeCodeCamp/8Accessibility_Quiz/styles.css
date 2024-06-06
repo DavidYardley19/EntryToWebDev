@@ -10,6 +10,13 @@ body {
     height: 50px;
     background-color: #1b1b32;
     display: flex;
+    
+    /* Put space betw children, vertically centre them, fix header to top of viewport */
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    /* Note: top is used to tweak an element with use of positional property... margin-top is for measuring external distance to the element in relation to the previous one */
   }
 
 /* Useful property of SVG - scalable vector graphics - is that it contains a path attribute : : allows image to be scaled without affecting resolution of resultant image... how... */
@@ -38,6 +45,28 @@ nav > ul {
   /* evenly space the children */
   display: flex;
   justify-content: space-evenly;
+}
+
+/* select list elements in nav bar - give styles */
+nav > ul > li {
+  /* you can also just use: nav li */
+  color: #dfdfe2;
+  margin: 0 0.2rem;
+  padding: 0.2rem;
+  display: block;
+}
+
+/* visual accessability: contrast between elements is key: example... between text and background of heading should be 4.5:1 at least */
+li > a {
+  color: inherit;
+  /* remove the underlines from the anchor tags */
+  text-decoration: none;
+}
+
+nav li:hover {
+  color: #1b1b32;
+  background-color: #dfdfe2;
+  cursor: pointer;
 }
 
 /* typeface :: important in accessibility, some fonts are easier to read than others - especially on low res screens */
