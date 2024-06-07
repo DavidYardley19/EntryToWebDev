@@ -7,5 +7,5 @@ FreeCodeCamp\
 Udemy\
 Personal Projects
 
-#Plan for first project
+Plan for first project\
 Quiz on HTML and CSS covered until accessability quiz project.
