@@ -5,4 +5,7 @@ d.yardley3767@student.leedsbeckett.ac.uk
 PLAN:\
 FreeCodeCamp\
 Udemy\
-Personal Projects - For each unique project done, move on to a copy of an existing product.
+Personal Projects
+
+#Plan for first project
+Quiz on HTML and CSS covered until accessability quiz project.
