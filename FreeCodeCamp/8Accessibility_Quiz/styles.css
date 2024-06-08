@@ -34,6 +34,13 @@ body {
 h1 {
   color: #f1be32;
   font-size: min(5vw, 1.2em);
+  /* When the screen width is small, h1 doesnt wrap text content how it should, align to centre */
+  text-align: center;
+}
+
+main {
+  /* Adding some space above since the "student info" title is not showing */
+  padding-top: 25px;
 }
 
 /* CHILD COMBINATOR SELECTOR >
@@ -45,7 +52,13 @@ nav > ul {
   /* evenly space the children */
   display: flex;
   justify-content: space-evenly;
-}
+  /* On small screens, ul in nav bar overflows to rhs > Can fix with flex display > wrap ul content then set list of css properties */
+  flex-wrap: wrap;
+  align-items: center;
+  padding-inline-start: 0;
+  margin-block: 0;
+  height: 100%;
+  }
 
 /* select list elements in nav bar - give styles */
 nav > ul > li {
@@ -69,6 +82,13 @@ nav li:hover {
   cursor: pointer;
 }
 
+/* set width of section elements to 80pc of parent container >> Margin to centre the section elements >> 10px to bottom margin >> Ensure section cant be larger than 600px width*/
+section {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
+}
+
 /* typeface :: important in accessibility, some fonts are easier to read than others - especially on low res screens */
 h1, h2 {
   font-family: Verdana, sans-serif;
@@ -76,11 +96,73 @@ h1, h2 {
 
 h2 {
   border-bottom: 4px solid #dfdfe2;
+  /* replace top margin */
+  margin-top: 0;
+  padding-top: 60px;
+}
+
+/* add top and left padding to .info class > all other = 0 vals */
+.info {
+  padding: 10px 0 0 5px;
+}
+
+/* .formrow class: top margin, L+R padding, all other 0 vals ... then increase font size for all input elements */
+.formrow {
+  margin-top: 30px;
+  padding: 0 15px;
+}
+
+input {
+  font-size: 16px;
+}
+
+/* 
+  Align input boxes with each other: create ruleset that targets all inputs labels within an info element and set displau to inline block... also align label elements to right
+*/
+
+.info input, .info label {
+  display: inline-block;
+}
+
+/* Make the first section look more inline >> Target only input elements within the .info class ... set width to 50pc and left align text */
+.info input {
+  width: 50%;
+  text-align: left;
+}
+
+/* target labels within info elements:: set width to 10pc... min of 55px */
+.info label {
+  width: 10%;
+  min-width: 55px;
+  text-align: right;
+}
+
+/* neat up .question-block: */
+.question-block {
+  text-align: left;
+  display: block;
+  width: 100%;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+/* make p elems appear as higher priority: */
+p {
+  margin-top: 5px;
+  padding-left: 15px;
+  font-size: 20px;
 }
 
 p::before {
   /* This is to prevent unnecessary repetition */
   content: "Question #";
+}
+
+/* useful to see default browser around fieldset elems during development ... but it may not be the style you want.. rm border and bottom padding on question elems */
+.question {
+  /* remember to use none, not 0 */
+  border: none;
+  padding-bottom: 0;
 }
 
 .sr-only {
@@ -96,3 +178,4 @@ p::before {
   white-space: nowrap;
   border: 0;
 }
+
